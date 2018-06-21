@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<link rel="stylesheet" href="registrousuarios1.css" />
+
+
+<style type="text/css">
+body,td,th {
+	font-family: Nunito, sans-serif;
+}
+body {
+	background-image: url(d0c209b52691293c2f89bd0d465508a0.jpg);
+}
+</style>
+</head>
+
+<body>
+<link rel="stylesheet" href="css/normalize.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+<form action="index.html" method="post">
+      
+        <h1>Registrarse</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Información básica</legend>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" required="required" name="user_name">
+          
+<label for="age">Año</label>
+          <script language="JavaScript">
+<!-- Begin
+function calculate() {
+month = document.form.month.selectedIndex;
+month = document.form.month.options[month].value;
+day = document.form.day.selectedIndex;
+day = document.form.day.options[day].value;
+year = document.form.year.value;
+
+var oyear=year
+
+var dob = " "+ year +", "+month + ",  "+day;
+var thenx = new Date(dob);
+
+var year=thenx.getYear();
+if (year<100) year="19" + thenx.getYear();
+else year=thenx.getYear();
+
+if (year > 1969) wyear=year;
+else {
+if (oyear<1900) {
+if (oyear>1800) {
+wrelyear= (eval(oyear)-1801)%(28);
+wyear = wrelyear+1981;
+}
+else wyear = 1970 
+}
+else
+if (oyear>1900) {wrelyear= (eval(oyear)-1901)%(28); 
+wyear= wrelyear+1985
+}
+else 
+if (oyear==1900) {wyear= 1990;
+   }              
+}
+var dob = " "+ wyear +", "+month + ",  "+day;
+var thenx = new Date(dob);
+
+var theday = thenx.getDay()+1;
+var date=thenx.getDate();
+
+var weekday = new Array(6);
+weekday[1]="Sunday";
+weekday[2]="Monday";
+weekday[3]="Tuesday";
+weekday[4]="Wednesday";
+weekday[5]="Thursday";
+weekday[6]="Friday";
+weekday[7]="Saturday";
+if (day != date) alert("Sorry!  That appears to be an invalid date!"+day+" ..."+date+"::"+oyear+"..."+year+" "+dob+"=="+wyear+".-.-"+thenx+" "+day+" "+month);
+else {
+dayborn = weekday[theday];
+dob = dayborn + ", " + month + " " + date + ", " + oyear + ".";
+alert("Naciste un día " + dob);
+   }
+}
+// End -->
+</script>
+
+</head>
+<body>
+<form name="Frmdatos" id="form1" method="get" onsubmit="return ValidaDatos()" action="">
+<center>
+<table border=0 cellspacing=0 cellpadding=0 bgcolor=white align="left">
+<tr><td align=center>
+<select name="select">
+<option value="" selected>Month
+</option><option value="January">Jan
+</option><option value="February">Feb
+</option><option value="March">Mar
+</option><option value="April">Apr
+</option><option value="May">May
+</option><option value="June">Jun
+</option><option value="July">Jul
+</option><option value="August">Aug
+</option><option value="September">Sep
+</option><option value="October">Oct
+</option><option value="November">Nov
+</option><option value="December">Dec
+</option></select>
+</td>
+<td align=center>
+<select name="day">
+<option value="" selected>Day
+</option><option value="1">01
+</option><option value="2">02
+</option><option value="3">03
+</option><option value="4">04
+</option><option value="5">05
+</option><option value="6">06
+</option><option value="7">07
+</option><option value="8">08
+</option><option value="9">09
+</option><option value="10">10
+</option><option value="11">11
+</option><option value="12">12
+</option><option value="13">13
+</option><option value="14">14
+</option><option value="15">15
+</option><option value="16">16
+</option><option value="17">17
+</option><option value="18">18
+</option><option value="19">19
+</option><option value="20">20
+</option><option value="21">21
+</option><option value="22">22
+</option><option value="23">23
+</option><option value="24">24
+</option><option value="25">25
+</option><option value="26">26
+</option><option value="27">27
+</option><option value="28">28
+</option><option value="29">29
+</option><option value="30">30
+</option><option value="31">31
+</option></select>
+</td>
+<td align="left">
+<input type=text name=year value="2000" size="1" maxlength=4 required />
+</td></tr>
+</table>
+</center></form>
+          
+          <label for="mail"><br />
+            <br />
+            <br />
+            <br />
+          Email:</label>
+          <input type="email" required="required" id="mail" name="user_email">
+          
+          <label for="password">Contraseña:</label>
+          <input type="password" required="required" id="password" name="user_password">
+          
+          <label>Edad:</label>
+          <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Menos a 18</label><br>
+          <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">Mayor a 18
+          </label>
+        
+     
+        
+       
+      
+        <button type="submit"> <a href="REGISTRO EXITOSO.html"> Registrarse</button> </a>
+</body>
+</html>
+
+</html>

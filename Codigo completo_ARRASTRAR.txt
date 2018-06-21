@@ -1,0 +1,54 @@
+var clips:Array = [c1,c2,c3];
+var destinos:Array = [d1,d2,d3];
+function Empezar(){
+	GuardarDatos();
+	ProgramarArrastres();
+	Corregir();
+}
+function GuardarDatos(){
+	for (var i = 0;i < clips.length; i++){
+		clips[i].xIni = clips[i]._x;
+		clips[i].yIni = clips[i]._y;
+		clips[i].destino = destinos[i];
+		clips[i].prof = clips[i].getDepth();
+	}
+}
+function ProgramarArrastres(){
+	for(var i = 0; i < clips.length; i++){
+		var clip = clips[i];
+		clip.onPress = function(){
+			startDrag(this,false);
+			this.swapDepths(getNextHighestDepth());
+		}
+		clip.onRelease = function(){
+			Soltar(this);
+			this.swapDepths(this.prof);
+		}
+	}
+}
+
+function Soltar(clip){
+	clip.stopDrag();
+	if(clip.hitTest(clip.destino)){
+		clip._x = clip.destino._x;
+		clip._y = clip.destino._y;
+	}else{
+		clip._x = clip.xIni;
+		clip._y = clip.yIni;
+		_root.malas+=1
+	}
+	Corregir();
+}
+
+function Corregir(){
+	var aciertos = 0;
+	var error = 0;
+	for(var i = 0; i < clips.length; i++){
+		if(clips[i].hitTest(destinos[i])){
+			aciertos++;
+	}
+	buenas.text = aciertos;
+}
+}
+Empezar();
+stop();
