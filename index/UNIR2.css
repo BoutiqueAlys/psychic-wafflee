@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+<style>
+.center {
+	text-align: center;
+	
+}
+body {
+	background-color:#69C;
+}
+h1{
+	color:white;
+	text-aling:center;
+}
+.h2{
+	color:blue;
+	text-aling:center;
+}
+	
+font{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 40px;
+	color:#CC3;
+}
+p {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	color:#C66;
+}

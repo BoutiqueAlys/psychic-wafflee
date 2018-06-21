@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Login para 1 usuario</title>
+<style type="text/css">
+body {
+	background-image: url(0eeef4acbcee2f8a9616fc26a9f08e22.png);
+}
+body,td,th {
+	color: #009;
+}
+</style>
+</head>
+
+<body>
+
+
+      <table width="1362" border="0">
+        <tr>
+          <td><div align="center"><img src="LOGO.png" width="151" height="149" /></div></td>
+        </tr>
+      </table>
+      <tr>
+  <SCRIPT  language=JavaScript> 
+function go(){
+if (document.form.password.value=='romero' && document.form.login.value=='erandi'){ 
+        document.form.submit(); 
+    } 
+    else{ 
+         alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+    } 
+} 
+</SCRIPT> 
+  <FORM name=form action="ropa/INICIO.html">
+    
+    <P align="center">Usuario:    <INPUT type=text name=login placeholder="Usuario"> 
+      <P align="center">Contraseña: <INPUT type=password name=password placeholder="Contraseña"> 
+      <P align="center">
+        <INPUT onclick=go() type=button value=Acceder>
+          
+          
+    </FORM> 
+      </table>
+</body>
+</html>
